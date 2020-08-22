@@ -1,0 +1,10 @@
+Subset with no pair sum divisible by K
+HackerRank Implmentation
+a) Migratory Birds
+b) Sock Merchant
+c) Picking Numbers
+d) Non-Divisible Subset // wip
+e) Forming a Magic Square // wip
+
+IB
+At least 5 problems from each of Array and Math section
