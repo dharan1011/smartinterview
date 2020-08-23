@@ -2,6 +2,7 @@
 #define fast cin.sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 using namespace std;
 const int mod = 1e9 + 7;
+
 void solve(long long n){
     long long n_c = n;
     long long sum = 0;
@@ -48,4 +49,6 @@ int main(){
 00100100 : 36   13
 00101000 : 40   14
 00110000 : 48   15
+
+hint  : sum of n natural numbers
 */
