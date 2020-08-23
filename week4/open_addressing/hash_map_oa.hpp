@@ -18,8 +18,8 @@ private:
     std::vector<int>* ht;
 
     [[nodiscard]] int hash_linear_probe(int key, int i) const;
-
     [[nodiscard]] int hash_quadratic_probe(int key, int i) const;
+    [[nodiscard]] int hash(int key, int i) const;
     int _search(int key);
     int _size;
 public:
@@ -47,20 +47,23 @@ hash_map_oa::~hash_map_oa() {
 }
 
 int hash_map_oa::hash_linear_probe(int key, int i) const {
-    key = abs(key);
     return (key + i) % this->S;
 }
 
 int hash_map_oa::hash_quadratic_probe(int key, int i) const {
-    key = abs(key);
     return (key + (i * i)) % this->S;
+}
+
+int hash_map_oa::hash(int key, int i) const {
+    key = abs(key);
+    return hash_quadratic_probe(key, i);
 }
 
 void hash_map_oa::insert(int key) {
     int i = 0;
-    int tabel_index = hash_quadratic_probe(key, i);
+    int tabel_index = hash(key, i);
     while ((*ht)[tabel_index] != EMPTY && (*ht)[tabel_index] != DELETED){
-        tabel_index = hash_quadratic_probe(key, ++i);
+        tabel_index = hash(key, ++i);
     }
     (*ht)[tabel_index] = key;
 }
@@ -71,12 +74,12 @@ bool hash_map_oa::search(int key) {
 
 int hash_map_oa::_search(int key) {
     int i = 0;
-    int table_index = hash_quadratic_probe(key, i);
+    int table_index = hash(key, i);
     while ((*ht)[table_index] != EMPTY){
         if((*ht)[table_index] == key){
             return table_index;
         }
-        table_index = hash_quadratic_probe(key, ++i);
+        table_index = hash(key, ++i);
     }
     return EMPTY;
 }
