@@ -1,5 +1,5 @@
 using ll = long long;
-ll be(ll a, ll b){
+ll pwr(ll a, ll b){
     ll res = 1;
     while (b)
     {
@@ -20,7 +20,7 @@ int sqrt(int A) {
     while (lo < hi)
     {
         int mid = lo + (hi - lo + 1) / 2;
-        ll sq = be(mid, 2);
+        ll sq = pwr(mid, 2);
         if(sq > A){
             hi = mid - 1;
         }else{
