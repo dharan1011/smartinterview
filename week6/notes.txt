@@ -1,0 +1,17 @@
+prime sieve, naive and optimized
+segmented sieve
+subset sum by breaking down the problem to two sum
+KMP, Rabin Carp
+String hashing, collision handling
+string matching
+string matching in range
+
+
+LC sub seq, sub string
+LPS
+L palindromic string
+
+game theory
+NIMS game
+
+manachers algorithm

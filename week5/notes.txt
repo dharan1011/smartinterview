@@ -1,0 +1,11 @@
+what if we find, min max till ith pos
+
+https://twitter.com/Mancee_19/status/1299964807815163904xor
+
+longest increasing contiguous sub array
+
+longest palindromic substring
+
+toggle string case
+
+smallest substring containing all chars of b
