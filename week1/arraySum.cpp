@@ -8,7 +8,3 @@ int addVectorSum(vector<int> arr){
     }
     return sum;
 }
-
-int main(){
-    return 0;
-}

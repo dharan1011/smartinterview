@@ -4,6 +4,10 @@
 #define fast cin.sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 using namespace std;
 
+/*
+Given 2 strings, find the smallest substring of B having all the characters of A, in any order.
+*/
+
 bool cmpr(const vector<int> &a, vector<int> &b){
     // cmpr a and b wrt a
     for(int i = 0; i < 26; i++){

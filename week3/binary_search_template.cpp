@@ -12,7 +12,7 @@ Minimize k s.t condition(k) is True
 
 bool condition(int k){
     /*
-    compute
+        compute
     */
    return true;
 }
